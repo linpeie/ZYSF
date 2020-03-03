@@ -1,0 +1,758 @@
+[2020-03-03 09:04:54] - INFO: 登录成功测试开始
+[2020-03-03 09:04:54] - INFO: 启动浏览器，访问url
+[2020-03-03 09:05:03] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200303090502.png
+[2020-03-03 09:05:03] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_01_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 45, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 31, in loginSuccess
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 65, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 62, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-03 09:05:03] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:08:48] - INFO: 登录失败测试开始
+[2020-03-03 09:08:48] - INFO: 启动浏览器，访问url
+[2020-03-03 09:08:50] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 63, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 58, in loginFail
+    login.errorClose().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in errorClose
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 50, in errorClose
+    locateType, locatorExpression = self.Options["errorClose".lower()].split(">>")
+KeyError: 'errorclose'
+
+[2020-03-03 09:08:50] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:10:20] - INFO: 登录成功测试开始
+[2020-03-03 09:10:20] - INFO: 启动浏览器，访问url
+[2020-03-03 09:10:30] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000016D3CA5C3C8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 52, in test_01_loginSuccess
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4294): Max retries exceeded with url: /session/4fa249723fa26718d1b92eba04fb9e5f/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016D3CA5C3C8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:10:30] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:10:30] - INFO: 登录失败测试开始
+[2020-03-03 09:10:30] - INFO: 启动浏览器，访问url
+[2020-03-03 09:10:34] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000016D3C974518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 60, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 47, in loginFail
+    driver.get(url)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4294): Max retries exceeded with url: /session/4fa249723fa26718d1b92eba04fb9e5f/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016D3C974518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:10:34] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:14:39] - INFO: 登录成功测试开始
+[2020-03-03 09:14:39] - INFO: 启动浏览器，访问url
+[2020-03-03 09:14:49] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002514334C470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 52, in test_01_loginSuccess
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4764): Max retries exceeded with url: /session/0c8714941611b6fd5336488202454ad4/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002514334C470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:14:49] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:14:50] - INFO: 登录失败测试开始
+[2020-03-03 09:14:50] - INFO: 启动浏览器，访问url
+[2020-03-03 09:14:54] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000251432753C8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 60, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 47, in loginFail
+    driver.get(url)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 72, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4764): Max retries exceeded with url: /session/0c8714941611b6fd5336488202454ad4/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000251432753C8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:14:54] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:15:14] - INFO: 登录失败测试开始
+[2020-03-03 09:15:14] - INFO: 启动浏览器，访问url
+[2020-03-03 09:15:17] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 60, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 55, in loginFail
+    login.errorClose().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in errorClose
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 50, in errorClose
+    locateType, locatorExpression = self.Options["errorClose".lower()].split(">>")
+KeyError: 'errorclose'
+
+[2020-03-03 09:15:17] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:17:58] - INFO: 登录失败测试开始
+[2020-03-03 09:17:58] - INFO: 启动浏览器，访问url
+[2020-03-03 09:18:06] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D816C31668>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 81, in test_02_loginFail
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4903): Max retries exceeded with url: /session/2901596a475860e308a835eed042d8ed/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D816C31668>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:18:06] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:21:12] - INFO: 登录失败测试开始
+[2020-03-03 09:21:12] - INFO: 启动浏览器，访问url
+[2020-03-03 09:21:21] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E3182FA550>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 81, in test_02_loginFail
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5301): Max retries exceeded with url: /session/b67a6b54079acca20a68195204f1a91d/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E3182FA550>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:21:21] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:22:50] - INFO: 登录失败测试开始
+[2020-03-03 09:22:50] - INFO: 启动浏览器，访问url
+[2020-03-03 09:22:54] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 60, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 55, in loginFail
+    login.errorClose().click()
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=80.0.3987.122)
+
+
+[2020-03-03 09:22:54] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:25:39] - INFO: 登录失败测试开始
+[2020-03-03 09:25:39] - INFO: 启动浏览器，访问url
+[2020-03-03 09:25:47] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001F93E7FB400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 81, in test_02_loginFail
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5615): Max retries exceeded with url: /session/ebf3d492482dd18f0eec3e0121ef1fac/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F93E7FB400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:25:47] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:34:12] - INFO: 登录失败测试开始
+[2020-03-03 09:34:12] - INFO: 启动浏览器，访问url
+[2020-03-03 09:34:15] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:34:15] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 84, in test_02_loginFail
+    self.excelObj.writeCell(accountSheet, "测试通过", rowNo=id + 2, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 141, in writeCell
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\PyCharmProject\\HIS13ZYSF\\testData\\testData.xlsx'
+
+[2020-03-03 09:34:15] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-03 09:35:32] - INFO: 登录失败测试开始
+[2020-03-03 09:35:32] - INFO: 启动浏览器，访问url
+[2020-03-03 09:35:35] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:35:35] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-03 09:36:03] - INFO: 登录失败测试开始
+[2020-03-03 09:36:03] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:05] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:05] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:07] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:07] - INFO: 本模块共执行用例 2 条，其中成功 0 条!
+[2020-03-03 09:36:23] - INFO: 登录失败测试开始
+[2020-03-03 09:36:23] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:25] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:25] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:27] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:27] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:28] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:28] - INFO: 启动浏览器，访问url
+[2020-03-03 09:36:30] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:36:30] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-03 09:37:10] - INFO: 登录成功测试开始
+[2020-03-03 09:37:10] - INFO: 启动浏览器，访问url
+[2020-03-03 09:37:17] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200303093717.png
+[2020-03-03 09:37:17] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_01_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 43, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in loginSuccess
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 65, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 62, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-03 09:37:17] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:37:17] - INFO: 登录失败测试开始
+[2020-03-03 09:37:17] - INFO: 启动浏览器，访问url
+[2020-03-03 09:37:19] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:37:19] - INFO: 启动浏览器，访问url
+[2020-03-03 09:37:22] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:37:22] - INFO: 启动浏览器，访问url
+[2020-03-03 09:37:23] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:37:23] - INFO: 启动浏览器，访问url
+[2020-03-03 09:37:25] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:37:25] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-03 09:37:27] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-03 09:37:27] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-03 09:37:27] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-03 09:37:30] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-03 09:39:50] - INFO: 登录成功测试开始
+[2020-03-03 09:39:50] - INFO: 启动浏览器，访问url
+[2020-03-03 09:40:01] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "E:\Python37\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "E:\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "E:\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "E:\Python37\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000226962AC470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 52, in test_01_loginSuccess
+    assert assertKeyWords in self.driver.page_source
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 68, in request
+    **urlopen_kw)
+  File "E:\Python37\lib\site-packages\urllib3\request.py", line 89, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "E:\Python37\lib\site-packages\urllib3\poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "E:\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "E:\Python37\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=6771): Max retries exceeded with url: /session/2b76af70e5e7c10d692b7361db2c9ada/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000226962AC470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[2020-03-03 09:40:01] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-03 09:40:32] - INFO: 登录成功测试开始
+[2020-03-03 09:40:32] - INFO: 启动浏览器，访问url
+[2020-03-03 09:40:36] - WARNING: 用户 zysf 登录后，断言页面关键字“住院入出转管理”失败
+[2020-03-03 09:40:36] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 61, in test_01_loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 52, in test_01_loginSuccess
+    assert assertKeyWords in self.driver.page_source
+AssertionError: assert '住院入出转管理' in '<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport...Storage.getItem("theme")){\n    body.setAttribute(\'class\', localStorage.getItem("theme"));\n}</script></body></html>'
+ +  where '<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport...Storage.getItem("theme")){\n    body.setAttribute(\'class\', localStorage.getItem("theme"));\n}</script></body></html>' = <selenium.webdriver.chrome.webdriver.WebDriver (session="c7a474811aa14170c6f7206d462b3754")>.page_source
+ +    where <selenium.webdriver.chrome.webdriver.WebDriver (session="c7a474811aa14170c6f7206d462b3754")> = <testScripts.testLogin.TestLogin testMethod=test_01_loginSuccess>.driver
+
+[2020-03-03 09:40:36] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-03 09:43:17] - INFO: 登录成功测试开始
+[2020-03-03 09:43:17] - INFO: 启动浏览器，访问url
+[2020-03-03 09:43:21] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:43:21] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-03 09:44:38] - INFO: 登录成功测试开始
+[2020-03-03 09:44:38] - INFO: 启动浏览器，访问url
+[2020-03-03 09:44:44] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:44:44] - INFO: 启动浏览器，访问url
+[2020-03-03 09:44:49] - INFO: 用户 9999 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:44:51] - INFO: 本模块共执行用例 2 条，其中成功 2 条!
+[2020-03-03 09:47:16] - INFO: 登录成功测试开始
+[2020-03-03 09:47:16] - INFO: 启动浏览器，访问url
+[2020-03-03 09:47:20] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:47:20] - INFO: 启动浏览器，访问url
+[2020-03-03 09:47:25] - INFO: 用户 9999 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:47:25] - INFO: 本模块共执行用例 2 条，其中成功 2 条!
+[2020-03-03 09:47:25] - INFO: 登录失败测试开始
+[2020-03-03 09:47:25] - INFO: 启动浏览器，访问url
+[2020-03-03 09:47:26] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:47:27] - INFO: 启动浏览器，访问url
+[2020-03-03 09:47:28] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:47:28] - INFO: 本模块共执行用例 2 条，其中成功 0 条!
+[2020-03-03 09:47:30] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-03 09:47:30] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-03 09:47:30] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-03 09:47:35] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-03 09:48:44] - INFO: 登录成功测试开始
+[2020-03-03 09:48:44] - INFO: 启动浏览器，访问url
+[2020-03-03 09:48:48] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:48:48] - INFO: 启动浏览器，访问url
+[2020-03-03 09:48:52] - INFO: 用户 9999 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-03 09:48:52] - INFO: 本模块共执行用例 2 条，其中成功 2 条!
+[2020-03-03 09:48:52] - INFO: 登录失败测试开始
+[2020-03-03 09:48:52] - INFO: 启动浏览器，访问url
+[2020-03-03 09:48:54] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:48:54] - INFO: 启动浏览器，访问url
+[2020-03-03 09:48:56] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-03 09:48:56] - INFO: 本模块共执行用例 2 条，其中成功 0 条!
+[2020-03-03 09:48:58] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-03 09:48:58] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-03 09:48:58] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-03 09:49:00] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确

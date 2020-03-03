@@ -1,0 +1,737 @@
+[2020-03-02 09:34:01] - INFO: 登录失败测试开始
+[2020-03-02 09:34:01] - INFO: 启动浏览器，访问url
+[2020-03-02 09:34:10] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302093409.png
+[2020-03-02 09:34:10] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 73, in test_login_fail
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 30, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 27, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:34:10] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:34:10] - INFO: 登录成功测试开始
+[2020-03-02 09:34:10] - INFO: 启动浏览器，访问url
+[2020-03-02 09:34:17] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302093417.png
+[2020-03-02 09:34:17] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 30, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 27, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:34:17] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:34:19] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:34:19] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:34:20] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:34:21] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 09:36:52] - INFO: 登录成功测试开始
+[2020-03-02 09:36:52] - INFO: 启动浏览器，访问url
+[2020-03-02 09:36:59] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302093659.png
+[2020-03-02 09:36:59] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 30, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 27, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:36:59] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:37:01] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:37:01] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:37:01] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:37:05] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 09:56:36] - INFO: 登录成功测试开始
+[2020-03-02 09:56:36] - INFO: 启动浏览器，访问url
+[2020-03-02 09:56:40] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 09:56:40] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:56:42] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:56:42] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:56:42] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:56:43] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 09:57:24] - INFO: 登录成功测试开始
+[2020-03-02 09:57:24] - INFO: 启动浏览器，访问url
+[2020-03-02 09:57:28] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 09:57:28] - INFO: 启动浏览器，访问url
+[2020-03-02 09:57:36] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//div[text()="HIS13住院收费系统"]/parent::div[@class="bs_box"]_20200302095736.png
+[2020-03-02 09:57:36] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 32, in login
+    ActionChains(driver).double_click(login.loginSys()).perform()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 65, in loginSys
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 62, in loginSys
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:57:36] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:57:39] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:57:39] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:57:39] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:57:40] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 09:58:21] - INFO: 登录成功测试开始
+[2020-03-02 09:58:21] - INFO: 启动浏览器，访问url
+[2020-03-02 09:58:25] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 09:58:25] - INFO: 启动浏览器，访问url
+[2020-03-02 09:58:32] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302095832.png
+[2020-03-02 09:58:32] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:58:32] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:58:35] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:58:35] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:58:35] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:58:37] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 09:59:36] - INFO: 登录成功测试开始
+[2020-03-02 09:59:36] - INFO: 启动浏览器，访问url
+[2020-03-02 09:59:40] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 09:59:40] - INFO: 启动浏览器，访问url
+[2020-03-02 09:59:47] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302095947.png
+[2020-03-02 09:59:47] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 09:59:47] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 09:59:50] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 09:59:50] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 09:59:50] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 09:59:52] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 10:03:05] - INFO: 登录成功测试开始
+[2020-03-02 10:03:05] - INFO: 启动浏览器，访问url
+[2020-03-02 10:03:09] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:03:09] - INFO: 启动浏览器，访问url
+[2020-03-02 10:03:15] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302100315.png
+[2020-03-02 10:03:15] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginsuccess
+    LoginAction.login(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in login
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in login
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 55, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 52, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 10:03:15] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:03:18] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 10:03:18] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 10:03:18] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 10:03:23] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 10:04:55] - INFO: 登录成功测试开始
+[2020-03-02 10:04:55] - INFO: 启动浏览器，访问url
+[2020-03-02 10:04:59] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:04:59] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:19:45] - INFO: 登录成功测试开始
+[2020-03-02 10:19:45] - INFO: 启动浏览器，访问url
+[2020-03-02 10:19:49] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:19:49] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:20:19] - INFO: 登录失败测试开始
+[2020-03-02 10:20:19] - INFO: 启动浏览器，访问url
+[2020-03-02 10:20:21] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:20:21] - INFO: 启动浏览器，访问url
+[2020-03-02 10:20:22] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:20:22] - INFO: 启动浏览器，访问url
+[2020-03-02 10:20:23] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:20:23] - INFO: 启动浏览器，访问url
+[2020-03-02 10:20:25] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:20:25] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:32:09] - INFO: 登录成功测试开始
+[2020-03-02 10:32:09] - INFO: 启动浏览器，访问url
+[2020-03-02 10:32:13] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:32:13] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 54, in test_loginSuccess
+    ParseExcel.writeCell(accountSheet, "测试通过", rowNo=accountRow, colNo=Account.testResult)
+TypeError: writeCell() missing 1 required positional argument: 'content'
+
+[2020-03-02 10:32:13] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:37:29] - INFO: 登录成功测试开始
+[2020-03-02 10:37:29] - INFO: 启动浏览器，访问url
+[2020-03-02 10:37:33] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:37:33] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 57, in test_loginSuccess
+    ParseExcel.writeCell(accountSheet, "测试通过", rowNo=accountRow, colNo=Account.testResult)
+TypeError: writeCell() missing 1 required positional argument: 'content'
+
+[2020-03-02 10:37:33] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:52:25] - INFO: 登录失败测试开始
+[2020-03-02 10:52:25] - INFO: 启动浏览器，访问url
+[2020-03-02 10:52:27] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:52:27] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 81, in test_loginFail
+    self.excelObj.writeCell(accountSheet, "测试失败", rowNo=accountRow, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 138, in writeCell
+    sheet.cell(row=rowNo, column=colNo).value = content
+  File "E:\Python37\lib\site-packages\openpyxl\worksheet\worksheet.py", line 236, in cell
+    if row < 1 or column < 1:
+TypeError: '<' not supported between instances of 'tuple' and 'int'
+
+[2020-03-02 10:52:27] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:52:27] - INFO: 登录成功测试开始
+[2020-03-02 10:52:27] - INFO: 启动浏览器，访问url
+[2020-03-02 10:52:34] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302105234.png
+[2020-03-02 10:52:34] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in loginSuccess
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 65, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 62, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 10:52:34] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:52:51] - INFO: 登录成功测试开始
+[2020-03-02 10:52:51] - INFO: 启动浏览器，访问url
+[2020-03-02 10:52:55] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:52:55] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 57, in test_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", rowNo=accountRow, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 138, in writeCell
+    sheet.cell(row=rowNo, column=colNo).value = content
+  File "E:\Python37\lib\site-packages\openpyxl\worksheet\worksheet.py", line 236, in cell
+    if row < 1 or column < 1:
+TypeError: '<' not supported between instances of 'tuple' and 'int'
+
+[2020-03-02 10:52:55] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:53:08] - INFO: 登录成功测试开始
+[2020-03-02 10:53:08] - INFO: 启动浏览器，访问url
+[2020-03-02 10:53:12] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:53:12] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 57, in test_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", rowNo=accountRow, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 138, in writeCell
+    sheet.cell(row=rowNo, column=colNo).value = content
+  File "E:\Python37\lib\site-packages\openpyxl\worksheet\worksheet.py", line 236, in cell
+    if row < 1 or column < 1:
+TypeError: '<' not supported between instances of 'tuple' and 'int'
+
+[2020-03-02 10:53:12] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:56:39] - INFO: 登录成功测试开始
+[2020-03-02 10:56:39] - INFO: 启动浏览器，访问url
+[2020-03-02 10:56:43] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 53, in test_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", coordinate=accountRow[Account.testResult - 1])
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 135, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 130, in writeCell
+    sheet.cell(coordinate=coordinate).value = content
+TypeError: cell() got an unexpected keyword argument 'coordinate'
+
+[2020-03-02 10:56:43] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:57:21] - INFO: 登录成功测试开始
+[2020-03-02 10:57:21] - INFO: 启动浏览器，访问url
+[2020-03-02 10:57:25] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:57:25] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 59, in test_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", coordinate=accountRow[Account.testResult - 1])
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 135, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 130, in writeCell
+    sheet.cell(coordinate=coordinate).value = content
+TypeError: cell() got an unexpected keyword argument 'coordinate'
+
+[2020-03-02 10:57:25] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:58:37] - INFO: 登录失败测试开始
+[2020-03-02 10:58:37] - INFO: 启动浏览器，访问url
+[2020-03-02 10:58:38] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 10:58:38] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 83, in test_loginFail
+    self.excelObj.writeCell(accountSheet, "测试失败", rowNo=accountRow, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 138, in writeCell
+    sheet.cell(row=rowNo, column=colNo).value = content
+  File "E:\Python37\lib\site-packages\openpyxl\worksheet\worksheet.py", line 236, in cell
+    if row < 1 or column < 1:
+TypeError: '<' not supported between instances of 'tuple' and 'int'
+
+[2020-03-02 10:58:38] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 10:59:16] - INFO: 登录成功测试开始
+[2020-03-02 10:59:16] - INFO: 启动浏览器，访问url
+[2020-03-02 10:59:20] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 10:59:20] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 59, in test_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", coordinate=accountRow[Account.testResult - 1])
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 135, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 130, in writeCell
+    sheet.cell(coordinate=coordinate).value = content
+TypeError: cell() got an unexpected keyword argument 'coordinate'
+
+[2020-03-02 10:59:20] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 11:00:10] - INFO: 登录成功测试开始
+[2020-03-02 11:00:10] - INFO: 启动浏览器，访问url
+[2020-03-02 11:03:53] - INFO: 登录成功测试开始
+[2020-03-02 11:03:53] - INFO: 启动浏览器，访问url
+[2020-03-02 11:03:57] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:03:57] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 11:05:10] - INFO: 登录成功测试开始
+[2020-03-02 11:05:10] - INFO: 启动浏览器，访问url
+[2020-03-02 11:05:14] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:05:14] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-02 11:06:34] - INFO: 登录成功测试开始
+[2020-03-02 11:06:34] - INFO: 启动浏览器，访问url
+[2020-03-02 11:06:38] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:06:38] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 11:07:19] - INFO: 登录失败测试开始
+[2020-03-02 11:07:19] - INFO: 启动浏览器，访问url
+[2020-03-02 11:07:21] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:07:21] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 86, in test_02_loginFail
+    self.excelObj.writeCell(accountSheet, "测试失败", rowNo=accountRow, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 138, in writeCell
+    sheet.cell(row=rowNo, column=colNo).value = content
+  File "E:\Python37\lib\site-packages\openpyxl\worksheet\worksheet.py", line 236, in cell
+    if row < 1 or column < 1:
+TypeError: '<' not supported between instances of 'tuple' and 'int'
+
+[2020-03-02 11:07:21] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-02 11:08:00] - INFO: 登录失败测试开始
+[2020-03-02 11:08:00] - INFO: 启动浏览器，访问url
+[2020-03-02 11:08:01] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:08:01] - INFO: 启动浏览器，访问url
+[2020-03-02 11:08:03] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:08:03] - INFO: 启动浏览器，访问url
+[2020-03-02 11:08:04] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:08:04] - INFO: 启动浏览器，访问url
+[2020-03-02 11:08:05] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:08:05] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 11:08:59] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//input[@type="password"]_20200302110858.png
+[2020-03-02 11:09:12] - INFO: 登录失败测试开始
+[2020-03-02 11:09:12] - INFO: 启动浏览器，访问url
+[2020-03-02 11:09:14] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:09:14] - INFO: 启动浏览器，访问url
+[2020-03-02 11:09:16] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:09:16] - INFO: 启动浏览器，访问url
+[2020-03-02 11:09:17] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:09:17] - INFO: 启动浏览器，访问url
+[2020-03-02 11:09:20] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 79, in test_02_loginFail
+    LoginAction.loginFail(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 52, in loginFail
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 48, in loginFail
+    login.errorClose().click()
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=80.0.3987.122)
+
+
+[2020-03-02 11:09:20] - INFO: 本模块共执行用例 3 条，其中成功 0 条!
+[2020-03-02 11:12:36] - INFO: 登录失败测试开始
+[2020-03-02 11:12:36] - INFO: 启动浏览器，访问url
+[2020-03-02 11:12:38] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:12:38] - INFO: 启动浏览器，访问url
+[2020-03-02 11:12:40] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:12:40] - INFO: 启动浏览器，访问url
+[2020-03-02 11:12:43] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:12:43] - INFO: 启动浏览器，访问url
+[2020-03-02 11:12:44] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:12:44] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 11:13:18] - INFO: 登录成功测试开始
+[2020-03-02 11:13:18] - INFO: 启动浏览器，访问url
+[2020-03-02 11:13:26] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302111325.png
+[2020-03-02 11:13:26] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_01_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 35, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 29, in loginSuccess
+    login.loginCon().click()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 65, in loginCon
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 62, in loginCon
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 11:13:26] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 11:13:26] - INFO: 登录失败测试开始
+[2020-03-02 11:13:26] - INFO: 启动浏览器，访问url
+[2020-03-02 11:13:28] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:13:28] - INFO: 启动浏览器，访问url
+[2020-03-02 11:13:29] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:13:29] - INFO: 启动浏览器，访问url
+[2020-03-02 11:13:31] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:13:31] - INFO: 启动浏览器，访问url
+[2020-03-02 11:13:32] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:13:32] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 11:14:17] - INFO: 登录成功测试开始
+[2020-03-02 11:14:17] - INFO: 启动浏览器，访问url
+[2020-03-02 11:14:25] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//input[@type="text"]_20200302111425.png
+[2020-03-02 11:14:25] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_01_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 37, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 31, in loginSuccess
+    login.userNameObj().clear()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 25, in userNameObj
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 22, in userNameObj
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 11:14:25] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 11:14:26] - INFO: 登录失败测试开始
+[2020-03-02 11:14:26] - INFO: 启动浏览器，访问url
+[2020-03-02 11:14:27] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:14:27] - INFO: 启动浏览器，访问url
+[2020-03-02 11:14:29] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:14:29] - INFO: 启动浏览器，访问url
+[2020-03-02 11:14:30] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:14:30] - INFO: 启动浏览器，访问url
+[2020-03-02 11:14:32] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:14:32] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 11:15:42] - INFO: 登录成功测试开始
+[2020-03-02 11:15:42] - INFO: 启动浏览器，访问url
+[2020-03-02 11:15:50] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//input[@type="text"]_20200302111550.png
+[2020-03-02 11:15:50] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 50, in test_01_loginSuccess
+    LoginAction.loginSuccess(self.driver, username, password)
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 37, in loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\appModules\loginAction.py", line 31, in loginSuccess
+    login.userNameObj().clear()
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 25, in userNameObj
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\pageObjects\loginPage.py", line 22, in userNameObj
+    element = getElement(self.driver, locateType, locatorExpression)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 70, in wrapper
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 66, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\wrappers.py", line 23, in wrapper
+    element = func(*args, **kwargs)
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 19, in getElement
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\objectMap.py", line 16, in getElement
+    lambda x: x.find_element(by=locateType, value=locatorExpression))
+  File "E:\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+[2020-03-02 11:15:50] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 11:16:44] - INFO: 登录成功测试开始
+[2020-03-02 11:16:44] - INFO: 启动浏览器，访问url
+[2020-03-02 11:16:48] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:16:48] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 11:16:48] - INFO: 登录失败测试开始
+[2020-03-02 11:16:48] - INFO: 启动浏览器，访问url
+[2020-03-02 11:16:50] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:16:50] - INFO: 启动浏览器，访问url
+[2020-03-02 11:16:51] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:16:51] - INFO: 启动浏览器，访问url
+[2020-03-02 11:16:53] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:16:53] - INFO: 启动浏览器，访问url
+[2020-03-02 11:16:54] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 11:16:54] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 11:18:52] - INFO: 登录成功测试开始
+[2020-03-02 11:18:52] - INFO: 启动浏览器，访问url
+[2020-03-02 11:18:56] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:18:56] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 61, in test_01_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", coordinate=accountRow[Account.testResult])
+IndexError: tuple index out of range
+
+[2020-03-02 11:18:56] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 11:19:13] - INFO: 登录成功测试开始
+[2020-03-02 11:19:13] - INFO: 启动浏览器，访问url
+[2020-03-02 11:19:17] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 11:19:17] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 61, in test_01_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", coordinate=accountRow[Account.testResult-1])
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 135, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 130, in writeCell
+    sheet.cell(coordinate=coordinate).value = content
+TypeError: cell() got an unexpected keyword argument 'coordinate'
+
+[2020-03-02 11:19:17] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 12:06:40] - INFO: 登录成功测试开始
+[2020-03-02 12:06:40] - INFO: 启动浏览器，访问url
+[2020-03-02 12:06:44] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 12:06:44] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 13:23:39] - INFO: 登录成功测试开始
+[2020-03-02 13:23:39] - INFO: 启动浏览器，访问url
+[2020-03-02 13:23:43] - WARNING: 用户 zysf 登录后，断言页面关键字“住院入出转管理”失败
+[2020-03-02 13:23:43] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 60, in test_01_loginSuccess
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 52, in test_01_loginSuccess
+    assert assertKeyWords in self.driver.page_source
+AssertionError
+
+[2020-03-02 13:23:43] - INFO: 本模块共执行用例 0 条，其中成功 0 条!
+[2020-03-02 13:23:44] - INFO: 登录失败测试开始
+[2020-03-02 13:23:44] - INFO: 启动浏览器，访问url
+[2020-03-02 13:23:46] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 13:23:46] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 85, in test_02_loginFail
+    self.excelObj.writeCell(accountSheet, "测试不通过", rowNo=id + 2, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 141, in writeCell
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\PyCharmProject\\HIS13ZYSF\\testData\\testData.xlsx'
+
+[2020-03-02 13:23:46] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-02 13:23:48] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 13:23:48] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 13:23:48] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 13:23:50] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 13:24:03] - INFO: 登录成功测试开始
+[2020-03-02 13:24:03] - INFO: 启动浏览器，访问url
+[2020-03-02 13:24:07] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 13:24:07] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 13:24:07] - INFO: 登录失败测试开始
+[2020-03-02 13:24:07] - INFO: 启动浏览器，访问url
+[2020-03-02 13:24:08] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 13:24:08] - INFO: 启动浏览器，访问url
+[2020-03-02 13:24:10] - INFO: 用户 9999 登录失败，断言页面关键字“错误”成功
+[2020-03-02 13:24:10] - INFO: 启动浏览器，访问url
+[2020-03-02 13:24:12] - INFO: 用户 None 登录失败，断言页面关键字“错误”成功
+[2020-03-02 13:24:12] - INFO: 启动浏览器，访问url
+[2020-03-02 13:24:13] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 13:24:13] - INFO: 本模块共执行用例 4 条，其中成功 0 条!
+[2020-03-02 13:24:15] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 13:24:15] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 13:24:15] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 13:24:17] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+[2020-03-02 16:46:56] - INFO: 截图保存路径：E:\PyCharmProject\HIS13ZYSF\logs\screenshots\element_//span[text()="继续登录"]_20200302164656.png
+[2020-03-02 16:53:36] - INFO: 登录成功测试开始
+[2020-03-02 16:53:36] - INFO: 启动浏览器，访问url
+[2020-03-02 16:53:41] - INFO: 用户 zysf 登录后，断言页面关键字“住院入出转管理”成功
+[2020-03-02 16:53:41] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 56, in test_01_loginSuccess
+    self.excelObj.writeCell(accountSheet, "测试通过", rowNo=id+2, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 141, in writeCell
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\PyCharmProject\\HIS13ZYSF\\testData\\testData.xlsx'
+
+[2020-03-02 16:53:41] - INFO: 本模块共执行用例 1 条，其中成功 1 条!
+[2020-03-02 16:53:41] - INFO: 登录失败测试开始
+[2020-03-02 16:53:41] - INFO: 启动浏览器，访问url
+[2020-03-02 16:53:43] - INFO: 用户 zysf 登录失败，断言页面关键字“错误”成功
+[2020-03-02 16:53:43] - ERROR: 主程序执行过程发生异常，异常信息：Traceback (most recent call last):
+  File "E:\PyCharmProject\HIS13ZYSF\testScripts\testLogin.py", line 87, in test_02_loginFail
+    self.excelObj.writeCell(accountSheet, "测试通过", rowNo=id + 2, colNo=Account.testResult)
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 143, in writeCell
+    raise e
+  File "E:\PyCharmProject\HIS13ZYSF\util\parseExcel.py", line 141, in writeCell
+    self.workbook.save(self.excelFile)
+  File "E:\Python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\Python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\PyCharmProject\\HIS13ZYSF\\testData\\testData.xlsx'
+
+[2020-03-02 16:53:43] - INFO: 本模块共执行用例 1 条，其中成功 0 条!
+[2020-03-02 16:53:46] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\testData\testData.xlsx
+[2020-03-02 16:53:46] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.html
+[2020-03-02 16:53:46] - INFO: attach file E:\PyCharmProject\HIS13ZYSF\report\result.json
+[2020-03-02 16:53:49] - INFO: 发送邮件"新版HIS住院收费测试报告"成功! 收件人：746346983@qq.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
